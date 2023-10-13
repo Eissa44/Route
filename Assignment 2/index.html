@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assinment 2</title>
+  </head>
+  <body style="background-color: #401010" ;>
+    <form>
+      <fieldset>
+        <legend style="background-color: #fff">Personal Data</legend>
+        <!-- first table -->
+        <fieldset style="background-color: #bdf2f2; margin-bottom: 50px">
+          <legend style="background-color: #fff; padding: 10px">
+            Your Name
+          </legend>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="fname">First Name:</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Eissa"
+                  />
+                </td>
+              </tr>
+              <br />
+              <tr>
+                <td>
+                  <label for="sname">Secound Name:</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="second"
+                    id="sname"
+                    placeholder="Elemam"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <!-- secound table -->
+        <table
+          style="
+            background-color: #41bfb3;
+            width: 350px;
+            height: 100px;
+            margin-bottom: 50px;
+          "
+        >
+          <tbody>
+            <tr>
+              <td>
+                <label for="phone">Your phone:</label>
+              </td>
+              <td>
+                <input type="tel" name="user num" id="phone" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email:</label>
+              </td>
+              <td>
+                <input type="email" name="user email" id="email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pass">Your password:</label>
+              </td>
+              <td>
+                <input type="password" name="user pass" id="pass" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="re pass">re-Password</label>
+              </td>
+              <td>
+                <input type="password" name="user re pass" id="re pass" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- radio box -->
+        <table style="color: #adadad; margin-bottom: 20px">
+          <tbody>
+            <tr>
+              <td>
+                <input type="radio" name="gender" value="male" />Male
+                <br />
+                <input type="radio" name="gender" value="female" />Female
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- check box -->
+        <table style="color: #adadad; margin-bottom: 20px">
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" name="studente" value="studente" />
+                Studente
+                <br />
+                <input type="checkbox" name="graduated" value="graduated" />
+                Graduated
+                <br />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- select section -->
+        <select>
+          <optgroup label="Group 1">
+            <option selected>AUC</option>
+            <option>PIS</option>
+          </optgroup>
+          <optgroup label="Group 1">
+            <option>October</option>
+            <option>Mansoura</option>
+          </optgroup>
+          <optgroup disabled label="Group 1">
+            <option>Giza</option>
+            <option>Dummiate</option>
+          </optgroup>
+        </select>
+        <br />
+        <button style="background-color: black; color: #fff">SUBMIT</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
