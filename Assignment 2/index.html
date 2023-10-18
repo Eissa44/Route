@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assinment 2</title>
+    <title>Assignment 2</title>
   </head>
   <body style="background-color: #401010" ;>
     <form>
@@ -18,28 +18,32 @@
             <tbody>
               <tr>
                 <td>
-                  <label for="fname">First Name:</label>
+                  <label for="fname">First Name</label>
                 </td>
+                <td>:</td>
                 <td>
                   <input
                     type="text"
                     name="fname"
                     id="fname"
                     placeholder="Eissa"
+                    required
                   />
                 </td>
               </tr>
               <br />
               <tr>
                 <td>
-                  <label for="sname">Secound Name:</label>
+                  <label for="sname">Secound Name</label>
                 </td>
+                <td>:</td>
                 <td>
                   <input
                     type="text"
                     name="second"
                     id="sname"
                     placeholder="Elemam"
+                    required
                   />
                 </td>
               </tr>
@@ -58,32 +62,36 @@
           <tbody>
             <tr>
               <td>
-                <label for="phone">Your phone:</label>
+                <label for="phone">Your phone</label>
               </td>
+              <td>:</td>
               <td>
                 <input type="tel" name="user num" id="phone" />
               </td>
             </tr>
             <tr>
               <td>
-                <label for="email">Email:</label>
+                <label for="email">Email</label>
               </td>
+              <td>:</td>
               <td>
-                <input type="email" name="user email" id="email" />
+                <input type="email" name="user email" id="email" required />
               </td>
             </tr>
             <tr>
               <td>
-                <label for="pass">Your password:</label>
+                <label for="pass">Your password</label>
               </td>
+              <td>:</td>
               <td>
-                <input type="password" name="user pass" id="pass" />
+                <input type="password" name="user pass" id="pass" required />
               </td>
             </tr>
             <tr>
               <td>
                 <label for="re pass">re-Password</label>
               </td>
+              <td>:</td>
               <td>
                 <input type="password" name="user re pass" id="re pass" />
               </td>
@@ -111,7 +119,7 @@
                 <input type="checkbox" name="studente" value="studente" />
                 Studente
                 <br />
-                <input type="checkbox" name="graduated" value="graduated" />
+                <input type="checkbox" name="studente" value="graduated" />
                 Graduated
                 <br />
               </td>
@@ -119,22 +127,22 @@
           </tbody>
         </table>
         <!-- select section -->
-        <select>
+        <select name="selected">
           <optgroup label="Group 1">
-            <option selected>AUC</option>
-            <option>PIS</option>
+            <option selected value="auc">AUC</option>
+            <option value="pis">PIS</option>
           </optgroup>
           <optgroup label="Group 1">
-            <option>October</option>
-            <option>Mansoura</option>
+            <option value="oct">October</option>
+            <option value="mus">Mansoura</option>
           </optgroup>
           <optgroup disabled label="Group 1">
-            <option>Giza</option>
-            <option>Dummiate</option>
+            <option value="giza">Giza</option>
+            <option value="Dummiate">Dummiate</option>
           </optgroup>
         </select>
         <br />
-        <button style="background-color: black; color: #fff">SUBMIT</button>
+        <input type="image" src="icons8-submit-64.png" alt="submit " />
       </fieldset>
     </form>
   </body>
