@@ -73,7 +73,10 @@
         <div class="header-div">
           <p class="hello">Hello i'm</p>
           <h1>ALEX SMITH</h1>
-          <p class="description">Professional Web Developer</p>
+          <p class="description">
+            Professional Web
+            <span class="auto-type"></span>
+          </p>
         </div>
       </header>
     </section>
@@ -480,5 +483,15 @@
       </div>
     </footer>
     <!-- start of the footer  -->
+    <!-- JS PATH -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Designer", "Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
